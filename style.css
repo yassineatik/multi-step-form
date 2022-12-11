@@ -79,6 +79,7 @@ input {
     border-radius: 5px;
     text-align: center;
     transition: all 0.3s;
+    cursor: pointer;
 }
 
 .btn-next {
@@ -201,3 +202,21 @@ textarea {
 }
 
 /* End Progress bar */
+
+/* Add Experience Btn */
+
+
+.add-exp-btn {
+    color: #577d4c;
+    border-right: 2px solid #577d4c;
+    border-bottom: 2px solid #577d4c;
+    padding: 0 10px 10px 0;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom-right-radius: 6px;
+    cursor: pointer;
+}
+
+.add-experience {
+    margin-bottom: 20px;
+}
