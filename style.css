@@ -13,9 +13,8 @@ body {
     background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    display: grid;
     place-items: center;
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 
 /* Global stylings */
@@ -219,4 +218,27 @@ textarea {
 
 .add-experience {
     margin-bottom: 20px;
+}
+
+nav {
+    background-color: #736692a1;
+    top: 0;
+    margin-top: 0;
+    padding: 1px 0;
+    margin-bottom: 20px;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 6fr 1fr 1fr 1fr;
+    color: white;
+    list-style: none;
+
+}
+
+li {
+    width: fit-content;
+    border-bottom: 1.5px solid white;
+    padding-bottom: 4px;
+    cursor: pointer;
 }

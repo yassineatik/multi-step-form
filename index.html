@@ -10,8 +10,17 @@
 </head>
 
 <body>
+    <nav>
+        <ul>
+            <li>Logo</li>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>My Portfolio</li>
+        </ul>
+    </nav>
     <form action="data.php" method="post" class="form">
         <!-- Progress Bar -->
+
         <div class="progress-bar">
             <div class="progress" id="progress"></div>
             <div class="progress-step active" data-title="Personal"></div>
@@ -19,7 +28,6 @@
             <div class="progress-step" data-title="Experiences"></div>
             <div class="progress-step" data-title="Photo"></div>
         </div>
-
         <!-- Steps -->
         <div class="form-step active">
             <h3>Personal Informations</h3>
@@ -36,7 +44,7 @@
                 <label for="birth-date">Birth Date</label>
                 <input type="date" name="birth-date" id="birth-date">
             </div>
-            <div class="">
+            <div class="btn-group">
                 <a class="btn btn-next">Next</a>
             </div>
         </div>
