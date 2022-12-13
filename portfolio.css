@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Quattrocento");
-
+body{
+    background-color:#333;
+}
 .about-tools ul li,
 .contact-social-icons ul a li {
     text-align: center;
