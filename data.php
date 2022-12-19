@@ -1,7 +1,12 @@
 <?php
-extract($_POST);
-$fullname = $_POST['full-name'];
 
+$profile_picture = $_FILES["picture"];
+$exploded = explode(".", $profile_picture['name']);
+$name = $exploded[0];
+$extension = $exploded[1];
+$picture_name = $name . uniqid() . "." . $extension;
+$new_path = 'images/' . $picture_name;
+move_uploaded_file($profile_picture["tmp_name"], $new_path);
 ?>
 
 
@@ -59,7 +64,7 @@ $fullname = $_POST['full-name'];
                         </div>
                         <div class="container">
                             <div class="content-center">
-                                <div class="cc-profile-image"><a href="#"><img src="" alt="Image" /></a></div>
+                                <div class="cc-profile-image"><a href="#"><img src="<?= $new_path ?>" alt="Image" /></a></div>
                                 <div class="h2 title"><?= $fullname ?></div>
                                 <p class="category text-white">Web Developer, Graphic Designer, Photographer</p><a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Hire Me</a><a class="btn btn-primary" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download CV</a>
                             </div>

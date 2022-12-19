@@ -18,7 +18,7 @@
             <li>My Portfolio</li>
         </ul>
     </nav>
-    <form action="data.php" method="POST" class="form">
+    <form action="data.php" method="POST" class="form" enctype="multipart/form-data">
         <!-- Progress Bar -->
 
         <div class="progress-bar">
@@ -26,6 +26,7 @@
             <div class="progress-step active" data-title="Personal"></div>
             <div class="progress-step" data-title="Contact "></div>
             <div class="progress-step" data-title="Experiences"></div>
+            <div class="progress-step" data-title="Social Links"></div>
             <div class="progress-step" data-title="Photo"></div>
         </div>
         <!-- Steps -->
@@ -118,6 +119,19 @@
                 <div class="input-box">
                     <span class="prefix">github.com/</span>
                     <input id="github" name="facebook" type="text" placeholder="210 123 4567" />
+                </div>
+            </div>
+            <div class="btn-group">
+                <a class="btn btn-prev">Previous</a>
+                <a class="btn btn-next">Next</a>
+            </div>
+        </div>
+        <div class="form-step ">
+            <h3>Personal Picture</h3>
+            <div class="input-group">
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">Profile Picture</label>
+                    <input class="form-control" type="file" id="formFile" name="picture">
                 </div>
             </div>
             <div class="btn-group">
